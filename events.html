@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <link rel="stylesheet" href="./styles/events.css">
+</head>
+<body>
+    <h1>
+        Events
+    </h1>
+
+    <div id="navbar">
+        <nav>
+            <a href="./index.html">
+                Login Page
+            </a>
+
+            <a href="./events.html">
+                Events Page
+            </a>
+        </nav>
+    </div><br>
+
+    <div id="filter-sort">
+        <select id="event-category-filter">
+            <option value="">Select Category</option>
+            <option value="Music">Music</option>
+            <option value="Sports">Sports</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+        
+        <select id="price-sort">
+            <option value="">Sort by Price</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div><br>
+
+    <div id="eventCardsBox">
+        <!-- Append Events here -->
+    </div>
+</body>
+<script src="./scripts/event.js"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles/dasboard.css">
+</head>
+<body>
+
+    <h1>
+        Admin Dashboard
+    </h1>
+
+    <div id="navbar">
+        <nav>
+            <a href="./index.html">
+                Login Page
+            </a>
+
+            <a href="./events.html">
+                Events Page
+            </a>
+        </nav>
+    </div><br>
+
+    <div id="form-table">
+        <div id="form">
+            <form id="event-form">
+                <input type="text" id="poster" placeholder="Poster Image URL" required>
+                <input type="text" id="name" placeholder="Event Name" required>
+                <textarea type="text" id="desc" placeholder="Description"></textarea> 
+                <input type="date" id="eventDate" required>
+                <input type="text" id="eventLocation" placeholder="Location" required>
+                <select id="eventCategory">
+                    <option value="">Select Category</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Workshop">Workshop</option>
+                </select>
+                <input type="number" id="eventPrice" placeholder="Price" required>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+        <div id="table">
+            <table id="event-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="event-table-body">
+                    <!--Append the data here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <dialog id="edit-dialog">
+        <form id="edit-form">
+            <input type="text" id="editPoster" placeholder="Poster Image URL" required>
+            <input type="text" id="editName" placeholder="Event Name" required>
+            <textarea type="text" id="editDesc" placeholder="Description"></textarea> 
+            <input type="date" id="editEventDate" required>
+            <input type="text" id="editEventLocation" placeholder="Location" required>
+            <select id="editEventCategory">
+                <option value="">Select Category</option>
+                <option value="Music">Music</option>
+                <option value="Sports">Sports</option>
+                <option value="Workshop">Workshop</option>
+            </select>
+            <input type="number" id="editEventPrice" placeholder="Price" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <button id="close-dialog">Close</button>
+    </dialog>
+
+</body>
+<script src="./scripts/dasboard.js"></script>
+</html>
