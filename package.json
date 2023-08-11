@@ -1,8 +1,8 @@
 {
-  "name": "coding-mock2",
+  "name": "rn-101-mock2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -13,14 +13,5 @@
   "dependencies": {
     "json": "^11.0.0",
     "server": "^1.0.38"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dharamveer9457/RN-101-Mock2.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Dharamveer9457/RN-101-Mock2/issues"
-  },
-  "homepage": "https://github.com/Dharamveer9457/RN-101-Mock2#readme"
+  }
 }
